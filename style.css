@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    float: left;
+  }
+  
+  #lezioni .row img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #lezioni {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 420px) {
+    
+    .row {
+        margin-top: 0;
+    }
+  }
+  
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 33%;
+  }
+  
+  #steps {
+    text-align: center;
+  }
+  
+  /* VISUALIZZAZIONE SU SMARTPHONE */
+  @media screen and (max-width: 420px) {
+
+    #lezioni .row>.left,
+    #lezioni .row>.right,
+    #steps .row> .left,
+    #steps .row> .central,
+    #steps .row> .right { 
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+
+    #lezioni .row {
+        background-color: rgb(242, 242, 209);
+    }
+    
+    .row {
+        margin-top: 0;
+    }
+
+    #lezioni .row h1,
+    #steps .row h1,
+    #why .row h1 {
+        padding: 10px 0 10px 0;
+    }
+
+    #why .row {
+        background-color: rgb(242, 242, 209);
+    }
+
+  }
+
+  /* VISUALIZZAZIONE SU TABLET */
+  @media screen and (min-width: 421px) and (max-width: 760px) {
+    #steps .row> .left,
+    #steps .row> .central {
+        width: 50%;
+    }
+
+    #steps .row> .right {
+        width: 100%;
+    }
+
+    #lezioni .row h1,
+    #steps .row h1,
+    #why .row h1 {
+        padding: 10px 0 10px 0;
+    }
+
+    #lezioni .row {
+        background-color: lightgray;
+    }
+
+    #why .row {
+        background-color: lightgray;
+    }
+
+    .row {
+        margin-top: 0;
+    }
+
+    #lezioni .row>.left,
+    #lezioni .row>.right,
+    #steps .row> .left,
+    #steps .row> .central,
+    #steps .row> .right {
+        padding: 10px 0 10px 0;
+    }
+
+  }
+
+
+  /* BLOCCO PERCHE */
+  #why {
+    text-align: center;
+  }
+  
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px
+  }
+  
+  /* COMMON */
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .container.grey {
+    background-color: #f9f9f9;
+  }
+  
+  img {
+    height: 200px;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
